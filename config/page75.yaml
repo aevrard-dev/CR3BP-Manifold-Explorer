@@ -1,0 +1,47 @@
+system:
+  mu: 0.1
+
+numerical:
+  time_step: 0.001
+  tolerance: 1e-5
+
+scenario:
+  jacobi: -0.03715   * 2
+  jacobi_base: 'l1'
+
+projections:
+  projection_1:
+    libration_point: 'L1'
+    branch: 'unstable'
+    intersection: '1'
+    section: 'u1'
+
+  projection_2:
+    libration_point: 'L1'
+    branch: 'unstable'
+    intersection: '2'
+    section: 'u1'
+
+  projection_3:
+    libration_point: 'L1'
+    branch: 'unstable'
+    intersection: '3'
+    section: 'u1'
+
+  projection_4:
+    libration_point: 'L1'
+    branch: 'stable'
+    intersection: '1'
+    section: 'u1'
+
+  projection_5:
+    libration_point: 'L1'
+    branch: 'stable'
+    intersection: 2
+    section: 'u1'
+
+  projection_6:
+    libration_point: 'L1'
+    branch: 'stable'
+    intersection: 3
+    section: 'u1'

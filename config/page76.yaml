@@ -1,0 +1,35 @@
+system:
+  type: 'SUN-JUPITER'
+
+numerical:
+  time_step: 0.001
+  tolerance: 1e-5
+  seed_density: 20
+
+scenario:
+  jacobi: 1.5185 * 2
+
+projections:
+  projection_1:
+    libration_point: 'L1'
+    branch: 'unstable'
+    intersection: '1'
+    section: 'u2'
+
+  projection_2:
+    libration_point: 'L2'
+    branch: 'stable'
+    intersection: 1
+    section: 'u2'
+
+  projection_3:
+    libration_point: 'L1'
+    branch: 'unstable'
+    intersection: '1'
+    section: 'u3'
+
+  projection_4:
+    libration_point: 'L2'
+    branch: 'stable'
+    intersection: 1
+    section: 'u3'
